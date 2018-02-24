@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>$http Tutorial</title>
+</head>
+
+
+<body ng-controller="myCtrl as vm">
+
+    <li>
+        <a ng-click="vm.getReqClick()">Get Request</a>
+    </li>
+    <li>
+        <a ng-click="vm.postReqClick()">Post Request</a>
+    </li>
+
+    <div id="getRequest" ng-if="vm.isGetReqClicked">
+        <h3>GET Request Example</h3>
+        <button class="btn btn-primary" ng-click="vm.getDataFromServer()">Get data from Server</button>
+
+        <h3 ng-if="vm.btnClickEvent">{{vm.listHeading}}</h3>
+        <div>
+            <li ng-repeat="data in vm.serverData">{{data.userFirstName + " " + data.userLastName }}</li>
+        </div>
+    </div>
+
+    <hr>
+    <div id="postRequest" ng-if="vm.isPostReqClicked">
+        <h3>POST Request Example</h3>
+        <br>
+        <form class="userForm">
+            <div class="form-group">
+                <label for="userFirstName">First name:</label>
+                <input type="text" class="form-control" id="userFirstName" name="fn" ng-model="vm.firstName">
+            </div>
+            <div class="form-group">
+                <label for="userLastName">Last name:</label>
+                <input type="text" class="form-control" id="userLastName" ng-model="vm.lastName">
+            </div>
+            <button  ng-disabled="(vm.firstName == null || vm.lastName == null)"  id="submitBtn" class="btn btn-primary" ng-click="vm.postRequestToServer()">Submit</button>
+
+            <p style="color: red" ng-if="errorMsg">{{vm.errorMsg}}</p>
+            <p style="color: green" ng-if="vm.submitBtnClick">User - {{vm.firstName + " " + vm.lastName}} record created!</p>
+        </form>
+
+    </div>
+
+
+    <!--styles  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--scripts  -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
+
+</body>
+
+</html>

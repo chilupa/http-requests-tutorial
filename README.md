@@ -1,1 +1,1 @@
-# http-requests-tutorial-angularjs
+# angularjs-template

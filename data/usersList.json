@@ -1,0 +1,85 @@
+{
+  "record": [
+    {
+      "id": 1,
+      "userID": "2",
+      "userFirstName": "Arya",
+      "userLastName": "Stark",
+      "userMiddleName": "null",
+      "roleName": "Admin",
+      "roleID": "1"
+    },
+    {
+      "id": 2,
+      "userID": "1",
+      "userFirstName": "John",
+      "userLastName": "Snow",
+      "userMiddleName": "null",
+      "roleName": "Moderator",
+      "roleID": "1"
+    },
+    {
+      "userFirstName": "Arya",
+      "userLastName": "Stark",
+      "id": 3
+    },
+    {
+      "userFirstName": "Pavan",
+      "userLastName": "Chilukuri",
+      "id": 4
+    },
+    {
+      "userFirstName": "Likhita",
+      "userLastName": "Patra",
+      "id": 5
+    },
+    {
+      "userFirstName": "Lakshmi",
+      "userLastName": "chilukuri",
+      "id": 6
+    },
+    {
+      "userFirstName": "pavan",
+      "userLastName": "chilukuri",
+      "id": 7
+    },
+    {
+      "userFirstName": "pavan",
+      "userLastName": "chilukuri",
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "userFirstName": "as",
+      "userLastName": "sa",
+      "id": 15
+    },
+    {
+      "userFirstName": "as",
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    }
+  ]
+}

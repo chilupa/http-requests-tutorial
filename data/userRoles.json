@@ -1,0 +1,23 @@
+{
+  "records": {
+    "record": [{
+      "id": 1,
+        "userID": "2",
+        "userFirstName": "Arya",
+        "userLastName": "Stark",
+        "userMiddleName": "null",
+        "roleName": "Admin",
+        "roleID": "1"
+      },
+      {
+        "id": 2,
+        "userID": "1",
+        "userFirstName": "John",
+        "userLastName": "Snow",
+        "userMiddleName": "null",
+        "roleName": "Moderator",
+        "roleID": "1"
+      }
+    ]
+  }
+}
